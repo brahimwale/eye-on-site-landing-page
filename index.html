@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye-on Site — Site Inspection Platform</title>
+
+    <!-- Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================================================== -->
+    <!-- SECTION 1: HEADER / NAVIGATION BAR                 -->
+    <!-- ================================================== -->
+    <div class="header-section">
+        <header class="site-header">
+            <div class="container header-inner">
+
+                <!-- Brand logo -->
+                <a href="#" class="logo-link">
+                    <span class="logo-icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 3 4 12v2.5l12-9 12 9V12 16 3Z" fill="#27a348" opacity="0.25"/>
+                            <path d="M16 6 6 13.5V14l10-7.5L26 14v-.5L16 6Z" fill="#27a348"/>
+                            <circle cx="14.5" cy="18" r="5" stroke="#27a348" stroke-width="2.2" fill="none"/>
+                            <circle cx="14.5" cy="18" r="1.8" fill="#27a348"/>
+                            <path d="m18.4 21.6 4 4" stroke="#27a348" stroke-width="2.4" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    <span class="logo-text">
+                        <span class="logo-name">Eye<span class="logo-brand">On</span> Site</span>
+                        <span class="logo-subtitle">Alpha Mead</span>
+                    </span>
+                </a>
+
+                <!-- Navigation links -->
+                <nav class="main-nav">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How it works</a>
+                    <a href="#platform">Platform</a>
+                </nav>
+
+                <!-- Header buttons -->
+                <div class="header-actions">
+                    <a href="https://eye-on-site.vercel.app/" class="btn btn-outline btn-sm" target="_blank">Sign in</a>
+                </div>
+
+            </div>
+        </header>
+    </div>
+
+    <!-- ================================================== -->
+    <!-- SECTION 2: HERO (HEADLINE & BUTTONS)              -->
+    <!-- ================================================== -->
+    <div class="hero-section">
+        <div class="container hero-inner">
+
+            <!-- Advisement content -->
+            <div class="hero-content">
+                <span class="hero-badge">Alpha Mead Facilities</span>
+                <h1>Site inspections,<br><span class="green-text">done right</span></h1>
+                <p class="hero-subtitle">
+                    Eye-on Site helps facility teams plan inspections, capture
+                    findings in the field, and turn data into action — across
+                    every location you manage.
+                </p>
+
+                <!-- Store download badges -->
+                <div class="store-badges">
+                    <a href="https://eye-on-site.vercel.app/" class="store-badge" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 512 512" aria-hidden="true">
+                            <path fill="#ffffff" d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                        </svg>
+                        <span class="store-badge-text">
+                            <span class="store-badge-top">GET IT ON</span>
+                            <span class="store-badge-name">Google Play</span>
+                        </span>
+                    </a>
+                    <a href="#" class="store-badge">
+                        <svg viewBox="0 0 384 512" aria-hidden="true">
+                            <path fill="#ffffff" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+                        </svg>
+                        <span class="store-badge-text">
+                            <span class="store-badge-top">Download on the</span>
+                            <span class="store-badge-name">App Store</span>
+                        </span>
+                    </a>
+                </div>
+
+                <!-- What to expect -->
+                <div class="expect-section">
+                    <span class="expect-label">What to expect</span>
+                    <ul class="hero-points">
+                        <li>Structured checklists</li>
+                        <li>Real-time issue tracking</li>
+                        <li>Mobile-ready</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================================================== -->
+    <!-- SECTION 3: FEATURES GRID (6 CARDS)                 -->
+    <!-- ================================================== -->
+    <div class="features-section" id="features">
+        <div class="container">
+
+            <!-- Section heading -->
+            <div class="section-heading">
+                <span class="section-label">Features</span>
+                <h2>Everything your facility team needs</h2>
+                <p>
+                    From field inspections to executive dashboards — one platform
+                    to keep every site running at its best.
+                </p>
+            </div>
+
+            <!-- Feature cards -->
+            <div class="cards-row">
+
+                <div class="feature-card">
+                    <h3>Inspection workflows</h3>
+                    <p>Plan, assign, and run inspections with structured checklists — on web or in the field.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Issue tracking</h3>
+                    <p>Capture findings, assign owners, and follow every issue from discovery through resolution.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Reports &amp; analytics</h3>
+                    <p>Monitor condition trends, SLA performance, and site health across your entire portfolio.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Inspector rankings</h3>
+                    <p>Celebrate top performers and drive accountability with transparent leaderboards.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Multi-site management</h3>
+                    <p>Organize sites by region, cluster, and category — all from a single command center.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>MFI programs</h3>
+                    <p>Run Management Facility Inspections with dedicated workflows and compliance tracking.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================================================== -->
+    <!-- SECTION 4: HOW IT WORKS (3 STEPS)                  -->
+    <!-- ================================================== -->
+    <div class="how-it-works-section" id="how-it-works">
+        <div class="container">
+
+            <!-- Section heading -->
+            <div class="section-heading">
+                <span class="section-label">How it works</span>
+                <h2>From setup to insight in three steps</h2>
+            </div>
+
+            <!-- Steps -->
+            <div class="cards-row">
+
+                <div class="step-card">
+                    <span class="step-number">01</span>
+                    <h3>Configure your sites</h3>
+                    <p>Set up locations, checklists, and user roles to match how your teams operate.</p>
+                </div>
+
+                <div class="step-card">
+                    <span class="step-number">02</span>
+                    <h3>Inspect in the field</h3>
+                    <p>Teams capture evidence, flag issues, and submit reviews from web or mobile.</p>
+                </div>
+
+                <div class="step-card">
+                    <span class="step-number">03</span>
+                    <h3>Act on insights</h3>
+                    <p>Review dashboards, resolve issues, and improve performance across every site.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================================================== -->
+    <!-- SECTION 5: PLATFORM                               -->
+    <!-- ================================================== -->
+    <div class="platform-section" id="platform">
+        <div class="container platform-inner">
+
+            <!-- Text and checklist -->
+            <div class="platform-content">
+                <span class="section-label">Built for facility professionals</span>
+                <h2>Web dashboard &amp; mobile app, working together</h2>
+                <p>
+                    Managers configure sites and review performance from the web.
+                    Inspectors capture evidence in the field with the mobile app.
+                    Everything syncs in real time.
+                </p>
+                <ul class="check-list">
+                    <li><span class="tick-box">&#10003;</span> Role-based access for admins, managers, and inspectors</li>
+                    <li><span class="tick-box">&#10003;</span> Guest access for contractors and external reviewers</li>
+                    <li><span class="tick-box">&#10003;</span> Configurable checklists and location hierarchies</li>
+                    <li><span class="tick-box">&#10003;</span> Exportable reports and trend analytics</li>
+                </ul>
+                <a href="https://eye-on-site.vercel.app/" class="btn btn-primary" target="_blank">Access the platform</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ================================================== -->
+    <!-- SECTION 6: CALL TO ACTION BAND                     -->
+    <!-- ================================================== -->
+    <div class="cta-section">
+        <div class="container cta-inner">
+            <h2>Ready to elevate your site inspections?</h2>
+            <p>
+                Sign in to your organization's workspace or contact your
+                administrator to get access.
+            </p>
+            <a href="https://eye-on-site.vercel.app/login" class="btn btn-primary btn-lg" target="_blank">Sign in to Eye-on Site</a>
+        </div>
+    </div>
+
+
+    <!-- ================================================== -->
+    <!-- SECTION 7: FOOTER                                  -->
+    <!-- ================================================== -->
+    <div class="footer-section">
+        <footer class="site-footer">
+            <div class="container footer-top">
+
+                <!-- Footer brand -->
+                <div class="footer-brand">
+                    <a href="#" class="logo-link">
+                        <span class="logo-icon">
+                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 3 4 12v2.5l12-9 12 9V12 16 3Z" fill="#27a348" opacity="0.25"/>
+                                <path d="M16 6 6 13.5V14l10-7.5L26 14v-.5L16 6Z" fill="#27a348"/>
+                                <circle cx="14.5" cy="18" r="5" stroke="#27a348" stroke-width="2.2" fill="none"/>
+                                <circle cx="14.5" cy="18" r="1.8" fill="#27a348"/>
+                                <path d="m18.4 21.6 4 4" stroke="#27a348" stroke-width="2.4" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <span class="logo-text">
+                            <span class="logo-name">Eye<span class="logo-brand">On</span> Site</span>
+                            <span class="logo-subtitle">Alpha Mead</span>
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Footer links -->
+                <nav class="footer-nav">
+                    <a href="https://eye-on-site.vercel.app/login" target="_blank">Sign in</a>
+                    <a href="#features">Features</a>
+                </nav>
+
+            </div>
+
+            <!-- Copyright line -->
+            <div class="container footer-bottom">
+                <p>&copy; 2026 Alpha Mead Facilities. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    color: #0a0a0a;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.green-text {
+    color: #27a348;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #27a348;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1f8a3c;
+}
+
+.btn-outline {
+    background-color: #ffffff;
+    color: #0a0a0a;
+    border: 1px solid #e5e5e5;
+}
+
+.btn-outline:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-sm {
+    padding: 9px 18px;
+    font-size: 14px;
+}
+
+.btn-lg {
+    padding: 14px 30px;
+    font-size: 16px;
+}
+
+/* --- Section headings --- */
+.section-heading {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 50px;
+}
+
+.section-label {
+    display: inline-block;
+    color: #27a348;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+}
+
+.section-heading p {
+    color: #737373;
+    margin-top: 14px;
+    font-size: 16px;
+}
+
+
+/* ============================================================ */
+/* SECTION 1 — HEADER / NAVIGATION                              */
+/* ============================================================ */
+.header-section {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.logo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+}
+
+.logo-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-name {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #0a0a0a;
+}
+
+.logo-brand {
+    color: #27a348;
+}
+
+.logo-subtitle {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #737373;
+    margin-top: 3px;
+}
+
+.main-nav a {
+    color: #737373;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 32px;
+}
+
+.main-nav a:hover {
+    color: #27a348;
+}
+
+.header-actions {
+    display: flex;
+    gap: 12px;
+}
+
+
+/* ============================================================ */
+/* SECTION 2 — HERO                                             */
+/* ============================================================ */
+.hero-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.hero-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 640px;
+    text-align: center;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: #e8f8ee;
+    color: #27a348;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+}
+
+.hero-subtitle {
+    color: #737373;
+    font-size: 18px;
+    margin: 20px auto 0;
+}
+
+.store-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 34px;
+}
+
+.store-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 10px 18px;
+    min-width: 170px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.store-badge:hover {
+    background-color: #262626;
+    transform: translateY(-2px);
+}
+
+.store-badge svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.store-badge-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.store-badge-top {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #a3a3a3;
+}
+
+.store-badge-name {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.expect-section {
+    margin-top: 36px;
+}
+
+.expect-label {
+    display: inline-block;
+    color: #27a348;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.hero-points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 24px;
+}
+
+.hero-points li {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #737373;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hero-points li::before {
+    content: "\2713";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #e8f8ee;
+    color: #27a348;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* ============================================================ */
+/* SECTION 3 — FEATURES                                         */
+/* ============================================================ */
+.features-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.features-section .cards-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(10, 10, 10, 0.05);
+    padding: 28px;
+}
+
+.feature-card h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    color: #737373;
+    font-size: 14px;
+}
+
+
+/* ============================================================ */
+/* SECTION 4 — HOW IT WORKS                                     */
+/* ============================================================ */
+.how-it-works-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #f9fafa;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.step-card {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 30px 26px;
+}
+
+.step-number {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 800;
+    color: #27a348;
+    background-color: #e8f8ee;
+    padding: 4px 14px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+}
+
+.step-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.step-card p {
+    color: #737373;
+    font-size: 14px;
+}
+
+
+/* ============================================================ */
+/* SECTION 5 — PLATFORM                                         */
+/* ============================================================ */
+.platform-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.platform-content {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.platform-content h2 {
+    font-size: 34px;
+    margin-bottom: 14px;
+}
+
+.platform-content > p {
+    color: #737373;
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+.check-list {
+    max-width: 460px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+
+.check-list li {
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.tick-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e8f8ee;
+    color: #27a348;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+
+/* ============================================================ */
+/* SECTION 6 — CALL TO ACTION                                   */
+/* ============================================================ */
+.cta-section {
+    border-top: 1px solid #e5e5e5;
+    background-color: #f2fbf5;
+}
+
+.cta-inner {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.cta-inner h2 {
+    font-size: 34px;
+}
+
+.cta-inner p {
+    color: #737373;
+    max-width: 480px;
+    margin: 14px auto 28px;
+}
+
+
+/* ============================================================ */
+/* SECTION 7 — FOOTER                                           */
+/* ============================================================ */
+.footer-section {
+    background-color: #f9fafa;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 36px;
+    padding-bottom: 24px;
+}
+
+.footer-brand .logo-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-brand .logo-name {
+    font-size: 15px;
+}
+
+.footer-brand .logo-subtitle {
+    font-size: 8px;
+}
+
+.footer-nav a {
+    color: #737373;
+    font-size: 14px;
+    margin-left: 24px;
+}
+
+.footer-nav a:hover {
+    color: #27a348;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.footer-bottom p {
+    color: #737373;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* ============================================================ */
+/* RESPONSIVE RULES (tablets and phones)                        */
+/* ============================================================ */
+@media (max-width: 900px) {
+
+    /* Header: hide nav links and Sign in button */
+    .main-nav {
+        display: none;
+    }
+
+    .header-actions .btn-outline {
+        display: none;
+    }
+
+    /* Hero headline scales down on small screens */
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    /* Store badges stack on top of each other */
+    .store-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Cards go full width */
+    .features-section .cards-row {
+        grid-template-columns: 1fr;
+    }
+
+    .step-card {
+        width: 100%;
+    }
+
+    .section-heading h2,
+    .platform-content h2,
+    .cta-inner h2 {
+        font-size: 27px;
+    }
+}
